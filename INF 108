@@ -1,0 +1,31 @@
+def convertToInches(a):
+    print(a)
+    b=a.split('\'')
+    feet=int(b[0])
+    print(b)
+    print('b[1]=',b[1])
+    print('now split b[1]')
+    c=b[1].split('\"')
+    print(c)
+    inches=feet*12+int(c[0]);
+    return inches
+    
+    # A python toolkit is useful because PythonToolkit (PTK) is an interactive environment for python. 
+    #It was originally designed to provide a python based environment similiar to Matlab for scientists and
+    #engineers when used together with the numpy, scipy and matplotlib python packages. However it can also be 
+    #used as a general purpose interactive python environment especially for interactive gui programming.
+    # It is built around a console window and simple python source editor and a Tool plugin system so that extra 
+    # features and support for python packages can be easily added. 
+    
+    Example usage of 'print_container', a tool to print
+any layout in a non-interactive way.
+"""
+from __future__ import unicode_literals, print_function
+from prompt_toolkit.shortcuts import print_container
+from prompt_toolkit.widgets import Frame, TextArea
+ print_container(
+    Frame(
+        TextArea(text='Hello world!\n')
+        TextArea(text='Hello world!\n'),
+        title='Stage: parse',
+   ))
